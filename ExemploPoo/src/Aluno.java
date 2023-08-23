@@ -1,10 +1,23 @@
 
-public class Aluno {
-	
-	String nome, matricula;
+public abstract class Aluno extends Pessoa implements Media {
+
+	String matricula;
 	double teste, prova;
 	
-	double obterMedia() {
-		return (teste + prova)/2;
+	public double getTeste() {
+		return teste;
 	}
+	
+	public void setTeste(double teste) {
+		this.teste = teste;
+	}
+	
+	public double getProva() {
+		return prova;
+	}
+	
+	public void setProva(double prova) {
+		this.prova = prova;
+	}
+	
 }
